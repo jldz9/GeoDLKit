@@ -1,0 +1,15 @@
+/* By default, show light chart and hide dark */
+.mermaid-container.light-mode {
+  display: block;
+}
+.mermaid-container.dark-mode {
+  display: none;
+}
+
+/* When MkDocs Material dark mode is active */
+.md-typeset--dark .mermaid-container.light-mode {
+  display: none !important;
+}
+.md-typeset--dark .mermaid-container.dark-mode {
+  display: block !important;
+}

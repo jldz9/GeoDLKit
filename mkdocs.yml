@@ -13,7 +13,6 @@ theme:
     - navigation.top
     - search.suggest
     - search.highlight
-    - header.autohide
     - content.code.copy
   palette:
     - media: "(prefers-color-scheme: light)"
@@ -22,15 +21,14 @@ theme:
       toggle:
         icon: material/weather-night
         name: switch to dark mode
-    - media: "(prefers-color-scheme: light)"
+    - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: black
+      primary: grey
       toggle:
         icon: material/weather-sunny
         name: switch to light mode
   icon:
     repo: fontawesome/brands/github
-  
 
 nav: 
   - Home: index.md
@@ -38,7 +36,7 @@ nav:
     - Installation: getting_start/index.md
     - Basic Usage: getting_start/basic_usage.md
   - Structure: 
-    - Main Program: flowchart/main_program.md
+    - Overview: flowchart/main_program.md
   - About: about.md
 
 extra:
@@ -51,6 +49,9 @@ extra:
       name: Discord
   version:
     provider: mike
+
+extra_css:
+  - stylesheets/extra.css
 
 markdown_extensions:
   - abbr
