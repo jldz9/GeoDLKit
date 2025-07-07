@@ -8,10 +8,10 @@ dependencies:
     - python=3.12.11
     - pip
     - pip:
-        - pycocotools=2.0.10
-        - pystac_client=0.8.6
-        - torchgeo=0.7.1
-        - mlflow=3.1.1
-        - zenml=0.83.1
+        - pycocotools==2.0.10
+        - pystac_client==0.8.6
+        - torchgeo==0.7.1
+        - mlflow==3.1.1
+        - zenml==0.83.1
         - mkdocs-material
         - mike
