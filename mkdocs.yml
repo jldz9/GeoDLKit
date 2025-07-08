@@ -37,6 +37,7 @@ nav:
     - Basic Usage: getting_start/basic_usage.md
   - Structure: 
     - Overview: flowchart/main_program.md
+    - Data Acquisition: flowchart/data_acquisition.md
   - About: about.md
 
 extra:
@@ -79,3 +80,4 @@ markdown_extensions:
 
 plugins:
   - search
+

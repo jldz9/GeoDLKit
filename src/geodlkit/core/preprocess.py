@@ -9,11 +9,7 @@ os.environ["NO_ALBUMENTATIONS_UPDATE"] = "1"
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
-
-import cv2
 from colorama import Fore, init
-import fiftyone as fo
-import geopandas as gpd
 import numpy as np
 from PIL import Image
 import rasterio as rio
@@ -24,6 +20,9 @@ from rasterio.enums import Resampling
 from shapely import box
 
 from geodlkit.utils import to_pixelcoord, COCO_parser, window_to_dict, get_mean_std, assert_json_serializable
+
+
+
 
 class Preprocess_v2:
     """Preprocess module for image IO, tilling.

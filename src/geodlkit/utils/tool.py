@@ -322,7 +322,7 @@ def bbox_from_mask(mask: np.ndarray) -> list:
     x_min, x_max = np.where(cols)[0][[0, -1]]
     return [x_min, y_min, x_max+1, y_max+1]
 
-def create_project_structure(workdir: str) -> Config:
+def create_project_structure(workdir) -> Config:
     """
     Create the necessary file structure for detectron2.
     Args: 
@@ -330,16 +330,13 @@ def create_project_structure(workdir: str) -> Config:
     Returns:
         A SimpleNamespace with .annotations, .train, .train_shp, .val, .val_shp, .test, .result
     """
-    workdir = Path(workdir).resolve()
+    workdir = Path(workdir).expanduser().resolve()
     directories = dict(
-            ANNOTATIONS = workdir / "datasets" / "annotations",
-            TRAIN = workdir / "datasets" / "train",
-            TRAIN_SHP = workdir / "datasets" / "train" / "shp",
-            VAL = workdir / "datasets" / "val",
-            VAL_SHP = workdir / "datasets" / "val" / "shp",
-            PREDICT = workdir / "datasets" / "predict",
-            RESULT = workdir / "results",
-            TEMP = workdir / "temp"
+            DATA = workdir / "data",
+            LABEL = workdir / "data" / "label",
+            IMAGE = workdir / "data" / "image",
+            CHECKPOINT = workdir / "checkpoints",
+            LOG = workdir / "logs"
     )
     for key, directory in directories.items():
         directory.mkdir(parents=True, exist_ok=True)

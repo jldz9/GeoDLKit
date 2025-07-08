@@ -18,5 +18,7 @@ graph LR
     F --> F1[ZenML]
 
 
-    click A1 "https://stacspec.org/en/" "STAC"
+    click A "/GeoDLKit/flowchart/data_acquisition"
+    click A1 "/GeoDLKit/flowchart/data_acquisition/#stac" "STAC"
+    
 ```

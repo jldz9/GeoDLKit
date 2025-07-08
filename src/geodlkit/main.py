@@ -12,11 +12,9 @@ import webbrowser
 from pathlib import Path
 
 
-import geopandas as gpd
 import pandas as pd
 import torch
 torch.set_float32_matmul_precision('high')
-from tensorboard import program
 from colorama import Fore, init
 init(autoreset=True)
 

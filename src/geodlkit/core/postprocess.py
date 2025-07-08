@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 from pathlib import Path
 
-import geopandas as gpd
 import pandas as pd
 from colorama import Fore, init
 init(autoreset=True)

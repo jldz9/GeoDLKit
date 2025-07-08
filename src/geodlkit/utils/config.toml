@@ -1,10 +1,6 @@
 # This is the config file for geodlkit program. Program use metric system
 [IO]
 WORKDIR =  "/" # Your Path to the working directory
-TRAIN_RASTER_DIR = "/" # Your Path to the training raster directory
-TRAIN_SHP_DIR = "/" # Your Path to the training shapefile directory
-VALID_SHP_DIR = "/" # Your Path to the validation shapefile directory
-PREDICT_RASTER_DIR = "/" # Your Path to the prediction raster directory
 
 [PREPROCESS]
 TILE_SIZE = 100 # meter
